@@ -160,7 +160,7 @@
 <body>
 <div class="wrap">
   <div class="card">
-    <h1>Escala de Conners — Pais</h1>
+    <h1>Escala de Conners — Professores</h1>
     <p class="muted">
       Pense em como o aluno(a) tem se comportado <b>recentemente</b> (últimas semanas/meses).
       As respostas serão enviadas diretamente para a profissional responsável
@@ -212,7 +212,7 @@ const SHEETS = {
 };
 const CODE = "CONNERS_PROFESSORES";
 const PORTAL_URL = "https://integradaneuropsicologia.github.io/formularios/";
-const RELEASE_KEYS = ["CONNERS_PAIS"]; // colunas no Patients com "sim" para liberar
+const RELEASE_KEYS = ["CONNERS_PROFESSORES"]; // colunas no Patients com "sim" para liberar
 
 /* ========= HELPERS ========= */
 const $ = s => document.querySelector(s);
@@ -390,7 +390,7 @@ function renderQuestions(){
 /* ========= ESTADO ========= */
 let patient=null, tokenRow=null, CPF="";
 let startAt=Date.now();
-const STORAGE_KEY = `CONNERS_PAIS_${TOKEN||"anon"}`;
+const STORAGE_KEY = `CONNERS_PROFESSORES_${TOKEN||"anon"}`;
 
 /* ========= BOOT ========= */
 (async function boot(){
