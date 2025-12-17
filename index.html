@@ -597,12 +597,8 @@ $("#form").addEventListener("submit", async (e)=>{
       submitted_at:new Date().toISOString(),
       total: total,               // soma (0..3) de todos os itens
       categoria: "",              // sem subescalas definidas aqui
-      questions: JSON.stringify(qaList), // <-- perguntas + respostas
-      metrics: JSON.stringify({
-        answers,
-        duration_sec: durationSec,
-        scale:"0-3"
-      })
+      questions: "",                 //JSON.stringify(qaList), // <-- perguntas + respostas
+      metrics: ""                  //JSON.stringify({answers, duration_sec: durationSec, scale:"0-3"})
     });
 
     // marca como feito no Patients
